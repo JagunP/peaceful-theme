@@ -11,7 +11,7 @@
   
   .canvasBlob{
     position: absolute;
-    top: 10%;
+    top: 20%;
     right: 10%;
     width: 70vw;
     height: 70vh;
@@ -19,19 +19,94 @@
     border-radius: 61% 16% 47% 64% / 29% 54% 33% 49% ;
   }
   
+  @keyframes popup {
+  0%{transform: translateY(0px);}
+  50%{transform: translateY(-50px);}
+  100%{transform: translateY(0px);}
+  }
+  
   .toolsBlob{
+    position: absolute;
+    width: 15vw;
+    height: 50vh;
+    background: red;
+    top: 40%;
+    right: 82%;
+    border-radius: 61% 67% 47% 64% / 69% 96% 33% 55% ;
+    
+    animation: popup;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .
+  
+  .option1{
     position: absolute;
     width: 10vw;
     height: 10vh;
-    background: red;
-    top: 10%;
-    right: 10%;
+    background: blue;
+  	transform: rotate(50deg);
+    top: 7%;
+    left: 87%;
     border-radius: 61% 67% 47% 64% / 69% 96% 33% 55% ;
+    
+    animation: popup;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
   
+  .option2{
+    position: absolute;
+    width: 10vw;
+    height: 10vh;
+    background: blue;
+  	transform: rotate(50deg);
+    top: 7%;
+    left: 60%;
+    border-radius: 61% 67% 47% 64% / 69% 96% 33% 55% ;
+    
+    animation: popup;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+   .option3{
+    position: absolute;
+    width: 10vw;
+    height: 10vh;
+    background: blue;
+  	transform: rotate(50deg);
+    top: 7%;
+    left: 73.5%;
+    border-radius: 61% 67% 47% 64% / 69% 96% 33% 55% ;
+    
+    animation: popup;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .header{
+    position: absolute;
+    width: 98vw;
+    height: 5vh;
+    background: green;
+/*   	transform: rotate(50deg); */
+    top: 5%;
+/*     right: 8%; */
+    border-radius: 20px 20px 20px 20px;
+  }
 </style>
 
 <div>
 <div class="canvasBlob"></div>
 <div class="toolsBlob"></div>
+<div class="header"></div>
+<div class="option1"></div>
+<div class="option2"></div>
+<div class="option3"></div>  
 </div>
