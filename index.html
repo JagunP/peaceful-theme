@@ -1,18 +1,20 @@
 <title>Peaceful Theme</title>
 
+<link href="https://fonts.googleapis.com/css?family=Akronim" rel="stylesheet">
+
 <style>
 
   body{
-		background: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+		background: linear-gradient(181.2deg, rgb(181, 239, 249) 10.5%, rgb(254, 254, 254) 86.8%);
     width: 100vw;
     height: 100vh;
-    border radius: 61% 16% 47% 64% / 29% 54% 33% 49% 
+    font-family: "Akronim";font-size: 2em;
   }
   
   .canvasBlob{
     position: absolute;
     top: 20%;
-    right: 10%;
+    right: 5%;
     width: 70vw;
     height: 70vh;
     background: white;
@@ -29,9 +31,9 @@
     position: absolute;
     width: 15vw;
     height: 50vh;
-    background: red;
-    top: 40%;
-    right: 82%;
+    background: rgba(196, 224, 241, 0.9);
+    top: 45%;
+    right: 84%;
     border-radius: 61% 67% 47% 64% / 69% 96% 33% 55% ;
     
     animation: popup;
@@ -40,14 +42,11 @@
     animation-timing-function: linear;
   }
   
-  .
-  
   .option1{
     position: absolute;
     width: 10vw;
     height: 10vh;
-    background: blue;
-  	transform: rotate(50deg);
+		background: rgba(148, 177, 192, 0.7);
     top: 7%;
     left: 87%;
     border-radius: 61% 67% 47% 64% / 69% 96% 33% 55% ;
@@ -62,8 +61,7 @@
     position: absolute;
     width: 10vw;
     height: 10vh;
-    background: blue;
-  	transform: rotate(50deg);
+		background: rgba(148, 177, 192, 0.7);
     top: 7%;
     left: 60%;
     border-radius: 61% 67% 47% 64% / 69% 96% 33% 55% ;
@@ -78,9 +76,8 @@
     position: absolute;
     width: 10vw;
     height: 10vh;
-    background: blue;
-  	transform: rotate(50deg);
-    top: 7%;
+		background: rgba(148, 177, 192, 0.7);
+     top: 7%;
     left: 73.5%;
     border-radius: 61% 67% 47% 64% / 69% 96% 33% 55% ;
     
@@ -94,19 +91,36 @@
     position: absolute;
     width: 98vw;
     height: 5vh;
-    background: green;
-/*   	transform: rotate(50deg); */
+		background: #93b179;
     top: 5%;
-/*     right: 8%; */
     border-radius: 20px 20px 20px 20px;
   }
+  
+  .colorChoice{
+    position: absolute;
+    width: 9vw;
+    height: 50vh;
+		background: #d6f1bb;
+    transform: rotate(50deg);
+    top: 17%;
+    left: 14.5%;
+    border-radius: 61% 67% 47% 64% / 69% 96% 33% 55% ;
+    
+    animation: popup;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  
 </style>
 
 <div>
-<div class="canvasBlob"></div>
-<div class="toolsBlob"></div>
-<div class="header"></div>
-<div class="option1"></div>
-<div class="option2"></div>
-<div class="option3"></div>  
+<div class="canvasBlob">CANVAS</div>
+<div class="toolsBlob">TOOLS</div>
+<div class="header">#Untitled Art</div>
+<div class="option1">HELP</div>
+<div class="option2">FILES</div>
+<div class="option3">OPTIONS</div>
+<div class="colorChoice">PALETTE</div>  
 </div>
